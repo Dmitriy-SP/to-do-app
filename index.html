@@ -12,6 +12,10 @@
         <section class="container-fluid container-xxl p-3 h-100">
             <div class="row h-100 g-1">
               <div class="h-75 card mx-auto posts custom-list-group border border-secondary border-2">
+                <div class="row border-bottom">
+                  <p class="pt-1 mb-1 col-md-6 text-center" id="tasksCount"></p>
+                  <p class="pt-1 mb-1 col-md-6 text-center" id="completedTasks"></p>
+                </div>
                 <ul class="list-group border-0 rounded-0 mt-1" id="tasks">
                 </ul>
               </div>
@@ -21,6 +25,7 @@
                     <div class="form-floating">
                       <input id="task-input" autofocus="" required="" name="task" aria-label="task" class="form-control w-100" placeholder="Write your task here" autocomplete="off">
                       <label for="task-input">Write your task here</label>
+                      <p class="feedback m-0 position-absolute small text-danger"></p>
                     </div>
                   </div>
                   <div class="col-auto">
