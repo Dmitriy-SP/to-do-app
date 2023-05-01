@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-do App</title>
+</head>
+<body class="d-flex flex-column min-vh-100 body-min-size">
+  <main class="container-fluid bg-dark h-90">
+    <div class="flex-grow-1 h-100">
+        <section class="container-fluid container-xxl p-3 h-100">
+            <div class="row h-100 g-1">
+              <div class="h-75 card mx-auto posts custom-list-group border border-secondary border-2">
+                <ul class="list-group border-0 rounded-0 mt-1" id="tasks">
+                </ul>
+              </div>
+              <form action class="task-form text-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-floating">
+                      <input id="task-input" autofocus="" required="" name="task" aria-label="task" class="form-control w-100" placeholder="Write your task here" autocomplete="off">
+                      <label for="task-input">Write your task here</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" aria-label="add" class="h-100 btn btn-lg btn-primary px-sm-5">add</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </section>
+    </div>
+  </main>
+  <footer class="footer py-3 bg-white h-10">
+    <div class="container-xl">
+        <div class="text-center foooter">
+            created by 
+            <a href="https://github.com/Dmitriy-SP" target="_blank">Dmitriy L.</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
